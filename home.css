@@ -1,0 +1,46 @@
+.section1 h4 {
+  margin: 0;
+  margin-bottom: 1vh;
+}
+
+.section1 .column {
+  float: left;
+  border: none;
+}
+
+.section1 .left {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  padding-left: 20vw;
+}
+
+.section1 .right {
+  width: 50%;
+  height: 100%;
+  padding-right: 10vw;
+}
+
+.section1 .left img {
+  max-height: 80vh;
+  display: flex;
+  align-self: center;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.section1 h1 {
+  color: #774018;
+  font-weight: 500;
+}
+
+.section1 p {
+  color: #774018;
+}
+
+
+body {
+  background-image: url(background-19.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

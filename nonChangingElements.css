@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* #region nav bar */
+
+/* the whole navigation bar */
+.nav-bar {
+  display: flex; /*important*/
+  align-items: center; /*important*/
+
+  padding: 10px;
+  padding-right: 20px;
+}
+
+/* the navigation bar text container */
+.nav-text {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* the navigation bar text list */
+.nav-text li {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #A2553A;
+
+  margin-right: 50px;
+}
+
+.nav-text li:hover {
+  cursor: pointer;
+}
+
+/* the navigation bar logo */
+.nav-logo {
+  height: 30px;
+  margin: 10px;
+  margin-left: 50px;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+/* #endregion of nav bar */
