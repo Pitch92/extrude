@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <link rel="icon" href="logo_vert-15-16.ico">
+  <link rel="icon" href="images/logo_vert-15-16.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="home.css">
@@ -17,12 +17,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
+  <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- Include prismatic.js for Magic Leap support -->
+  <script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>
+
+  <!-- Focus visible package -->
+  <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+
 </head>
 <body>
 
   <!-- Navigation bar -->
-    <div id="topPage" class="nav-bar">
-      <img id="navLogo" class="nav-logo" src="logo-full-18-18.png">
+    <div class="nav-bar">
+      <img id="navLogo" class="nav-logo" src="images/logo-full.png">
       <ul class="nav-text">
         <li>Boutique</li>
         <li>Contact</li>
@@ -33,20 +51,51 @@
     <div class="section1 row">
 
       <div class="column left">
-        <img src="dame.png">
+        <img src="images/dame.png">
       </div>
 
       <div class="column right">
         <h1>Nous sommes un studio de design créant des objets imprimés en 3D</h1>
+        <p>Le monde actuel nous offre des possibilité qu’il faut embrasser.</p>
         <br>
-        <div class="txt-container">
-          <p>Le monde actuel nous offre des possibilité qu’il faut embrasser.</p>
-        </div>
         <br>
-        <button type="button" class="button3">Voir la boutique</button>
+        <br>
+        <button type="button" class="buttonBorder">Voir la boutique</button>
       </div>
 
     </div>
 
+    <div class="section2">
+      <h3>Notre dernier objet</h3>
+
+      <model-viewer
+              src="glb/Echiquier.glb"
+              ios-src="https://raw.githubusercontent.com/thrulight/AR/39423c17c0d12301cc9862d2fcc431a17aeda475/echec-v100000.usdz"
+              class="repairGo mV"
+              ar
+              auto-rotate
+              camera-controls
+              loading="eager"
+              shadow-intensity="3"
+              shadow-softness="1.3"
+              camera-orbit="60deg 80deg 3.5m"
+              stage-light-intensity="3" environment-intensity="2"
+              alt="A 3D model of an repair station">
+        </model-viewer>
+
+
+    </div>
+
 </body>
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
 <DOCTYPE html>

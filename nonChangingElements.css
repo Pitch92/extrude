@@ -13,7 +13,6 @@ body {
   clear: both;
 }
 
-
 /* #region nav bar */
 
 /* the whole navigation bar */
@@ -43,7 +42,7 @@ body {
   list-style-type: none;
   font-size: 1rem;
   font-weight: 500;
-  color: #A2553A;
+  color: #774018;
 
   margin-right: 50px;
 }
@@ -54,7 +53,7 @@ body {
 
 /* the navigation bar logo */
 .nav-logo {
-  height: 30px;
+  height: 27px;
   margin: 10px;
   margin-left: 50px;
 }
@@ -64,3 +63,23 @@ body {
 }
 
 /* #endregion of nav bar */
+
+/* #region headings */
+h1 {
+  font-size: 2.5em;
+}
+
+/* #endregion headings */
+
+.buttonBorder {
+  padding: 10px 0 10px 0;
+  background-color: transparent;
+  text-transform: uppercase;
+
+  border: none;
+  border-bottom: 2px solid #774018;
+
+  font-weight: 500;
+  font-size: 1em;
+  color: #774018;
+}
