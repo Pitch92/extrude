@@ -87,7 +87,7 @@ body {
 /* #region section1 */
 .section1 {
   background-color: white;
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-left: 10vw;
 }
 
@@ -128,3 +128,35 @@ body {
   margin-right: 1vh;
 }
 /* #endregion section1 */
+
+/* #region section2 */
+.section2 {
+  background-color: #DBE0DD;
+  padding: 5vh 10vw 5vh 10vw;
+  height: 80vh;
+}
+
+.section2 .column {
+  float: left;
+  border: none;
+}
+
+.section2 .left {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.section2 .right {
+  width: 60%;
+  height: 100%;
+}
+
+.section2 model-viewer  {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+/* #endregion section2 */
