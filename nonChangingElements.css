@@ -71,6 +71,7 @@ body {
 /* #region headings */
 h1 {
   font-size: 2.5em;
+  font-weight: 500;
 }
 
 /* #endregion headings */
