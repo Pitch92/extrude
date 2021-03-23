@@ -95,13 +95,8 @@ button:hover {
   color: #774018;
 }
 
-<<<<<<< HEAD
-.buttonFull {
-  padding: 15px 10px 15px 10px;
-=======
 .buttonBorderFull {
   padding: 15px 20px 15px 20px;
->>>>>>> 27f33def39230fd3c8007e6a067db5eb4b50a255
   background-color: transparent;
 
   border: none;
