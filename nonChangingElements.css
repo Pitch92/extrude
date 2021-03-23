@@ -115,7 +115,7 @@ button:hover {
   font-weight: 400;
   font-size: 1em;
   color: white;
-  border: none;
+  border: 2px solid white;
 }
 .buttonFull:hover {
   cursor: pointer;
