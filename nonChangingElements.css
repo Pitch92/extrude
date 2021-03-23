@@ -94,7 +94,7 @@ button:hover {
   color: #774018;
 }
 
-.buttonBorderFull {
+.buttonFull {
   padding: 15px 10px 15px 10px;
   background-color: transparent;
   text-transform: uppercase;
