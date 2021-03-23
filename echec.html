@@ -3,9 +3,10 @@
   <link rel="icon" href="images/logo_vert-15-16.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="boutique.css">
+  <link rel="stylesheet" href="projet.css">
   <link rel="stylesheet" href="nonChangingElements.css">
   <title>studio extrude</title>
+  <script src="script.js"></script>
 
   <!-- Ubuntu -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,6 +43,96 @@
         <li><a href="a-propos.html">A propos</a></li>
       </ul>
     </div>
+
+    <div class="section1 row">
+
+      <div class="column left">
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="images/echec/DSCF9425.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/echec/DSCF9454.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/echec/DSCF9475.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/echec/DSCF9430.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/echec/DSCF9482.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/echec/DSCF9466.jpg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+      </div>
+
+      <div class="column right">
+        <h1>Jeu d'échecs</h1>
+      </br>
+        <p>Dans notre volonté d’itérer sur des formes et un objet ludique, nous avons décidé de proposer un jeu d’échec.
+        </br>
+        </br>
+          Il a pour vocation de se vouloir minimaliste et moderne, sans pour autant se priver de l’aspect facilement dissociable des jeux traditionnels.</p>
+        <br>
+        <button type="button" class="buttonFull" onclick="window.open('https://www.etsy.com/fr/shop/StudioExtrude?ref=seller-platform-mcnav')">Acheter</button>
+      </div>
+      </br>
+      </br>
+
+    </div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 </body>
 
