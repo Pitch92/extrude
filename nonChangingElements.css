@@ -82,7 +82,7 @@ button:hover {
   transition-duration: .2s;
 }
 
-button:active {
+button:focus {
   outline: none;
 }
 
