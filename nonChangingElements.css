@@ -82,8 +82,12 @@ button:hover {
   transition-duration: .2s;
 }
 
+button:active {
+  outline: none;
+}
+
 .buttonBorder {
-  padding: 15px 20px 15px 20px;
+  padding: 15px 0 15px 0;
   background-color: transparent;
   text-transform: uppercase;
 

@@ -44,6 +44,9 @@ body {
   padding-bottom: 10%;
   margin: 0;
 }
+.section2 img:hover {
+  cursor: pointer;
+}
 
 .buttonFull {
   margin-right: 1vh;
