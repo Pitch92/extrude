@@ -31,8 +31,8 @@ body {
 .section2 .right {
   width: 50%;
   height: 100%;
-  padding-right: 7vw;
-  padding-left: 10vw;
+  padding-right: 12vw;
+  padding-left: 5vw;
   padding-top: 10vh;
 }
 
@@ -45,12 +45,7 @@ body {
   margin: 0;
 }
 
-.section2 h1 {
-  color: #774018;
-  font-weight: 500;
-}
-
-.section2 p {
-  color: #774018;
+.buttonFull {
+  margin-right: 1vh;
 }
 /* #endregion section2 */
