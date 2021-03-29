@@ -52,3 +52,31 @@ body {
   margin-right: 1vh;
 }
 /* #endregion section2 */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+body {
+  background-image: none;
+}
+
+.section2 .column {
+  float: none;
+  padding: 0;
+}
+
+.section2 .left, .section2 .right {
+  width: 100%;
+  justify-content: center;
+}
+
+.section2 {
+  padding: 5%;
+}
+
+.section2 .left img {
+  width: 100%;
+}
+
+
+}
+/* #endregion mobile version */

@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="projet.css">
   <link rel="stylesheet" href="nonChangingElements.css">
   <title>studio extrude</title>
+  <script src="script.js"></script>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Ubuntu -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,14 +38,27 @@
 <body>
 
   <!-- Navigation bar -->
-    <div class="nav-bar">
-      <a href="index.html"><img id="navLogo" class="nav-logo" src="images/logo-full.png"></a>
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="nav-bar" id="myTopnav">
+      <a href="index.html"><img id="navLogo" class="nav-logo" src="images/logo-noir.svg"></a>
+      <a id="title">studio extrude</a>
       <ul class="nav-text">
         <li><a href="boutique.html">Boutique</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="a-propos.html">A propos</a></li>
       </ul>
+        <a class="icon" id="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
     </div>
+
+    <ul class="nav-bar-mobile" id="nav-bar-mobile">
+      <li><a href="boutique.html">Boutique</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="a-propos.html">A propos</a></li>
+    </ul>
 
     <div class="section1 row">
 

@@ -160,3 +160,40 @@ body {
   height: 100%;
 }
 /* #endregion section2 */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+body {
+  background-image: none;
+}
+
+.section1 .column, .section2 .column {
+  float: none;
+  padding: 0;
+  height: 100%;
+}
+
+.section1 .left, .section1 .right, .section2 .left, .section2 .right {
+  width: 100%;
+  justify-content: center;
+}
+
+.section1 {
+  padding: 5%;
+}
+
+.section2 {
+  height: 100%;
+}
+
+.section2 .left img {
+  width: 100%;
+}
+
+model-viewer {
+  height: 100%;
+}
+
+
+}
+/* #endregion mobile version */

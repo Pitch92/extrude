@@ -39,6 +39,13 @@ body {
   align-items: center;
 }
 
+#title {
+  white-space: nowrap;
+  font-weight: 500;
+  margin-left: 1vw;
+}
+
+
 /* the navigation bar text list */
 .nav-text li {
   display: flex;
@@ -105,11 +112,11 @@ button:focus {
   text-transform: uppercase;
 
   border: none;
-  border-bottom: 2px solid #774018;
+  border-bottom: 2px solid #658071;
 
   font-weight: 500;
   font-size: 1em;
-  color: #774018;
+  color: #658071;
 }
 
 .buttonBorderFull {
@@ -151,26 +158,23 @@ button:focus {
 /* #region mobile version */
 @media screen and (max-width: 900px){
 
-body {
-  padding: 5%;
-}
-
-.nav-bar ul * {
+#title {
   display: none;
 }
 
 .nav-bar {
-  padding: 0;
+  /*padding: 0;*/
 }
 
 .nav-bar .nav-logo {
-  margin: 0;
+  /*margin: 0;*/
 }
 
 .nav-bar .icon {
   display: block;
-  color: #658071;
+  color: black;
   z-index: 100;
+  transform: scale(1.2);
 }
 
 .overlay{
@@ -181,22 +185,22 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
-  opacity: .8;
+  background-color: #658071;
   z-index: 1;
 }
 
 .X{
   display: none;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   justify-content: flex-end;
-  top: 0;
-  right: 25px;
-  color: Grey;
-  font-size: 45px;
+  top: 3px;
+  right: 15px;
+  color: white;
+  font-size: 40px;
   margin-left: 45px;
   height: 50px;
+  padding: 0;
   transition: 0.3s;
   cursor: pointer;
   font-weight: lighter;
@@ -206,16 +210,27 @@ body {
 .nav-bar-mobile {
   position: fixed;
   z-index: 3;
+  width: 100%;
+  height: 100%;
   list-style: none;
   font-size: 30px;
   height: 60px;
+  padding: 0;
+  top: 25%;
+}
+
+.nav-bar ul * {
+  display: none;
 }
 
 .nav-bar-mobile li a {
   text-decoration: none;
   color: white;
-  text-align: center;
+}
 
+.nav-bar-mobile li {
+  margin-top: 10%;
+  text-align: center;
 }
 
 }
