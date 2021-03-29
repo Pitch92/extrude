@@ -182,15 +182,19 @@ body {
   padding: 5%;
 }
 
-.section2 {
-  height: 100%;
+.section2 .left {
+  height: auto;
+}
+
+.section2 model-viewer {
+  height: 60vh;
 }
 
 .section2 .left img {
   width: 100%;
 }
 
-model-viewer {
+.section2 .row {
   height: 100%;
 }
 
