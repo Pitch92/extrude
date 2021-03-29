@@ -2,6 +2,7 @@ body {
   background-image: url(images/background-19.png);
   background-size: contain;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 /* #region section1 */
@@ -66,3 +67,44 @@ model-viewer {
   font-size: 1.2em;
 }
 /* #endregion section2 */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+body {
+  background-image: none;
+  background-color: #DBE0DD;
+  padding: 5%;
+}
+
+.section1 .column {
+  float: none;
+  padding: 0;
+}
+
+.section1 .column br {
+  display: none;
+}
+
+.section1 h1, .section1 p, .section1 .buttonBorder, .section2 h3 {
+  color: #658071;
+}
+.section1 .buttonBorder {
+  border-bottom: 2px solid #658071;
+}
+
+.section1 .left, .section1 .right {
+  width: 100%;
+  justify-content: center;
+}
+
+.section2 {
+  padding: 0;
+  margin-top: 5vh;
+}
+
+.section1 .left img {
+  display: none;
+}
+
+}
+/* #endregion mobile version */

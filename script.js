@@ -1,3 +1,4 @@
+//Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -18,4 +19,18 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
+}
+
+//Navigation bar mobile version
+function openNav() {
+   document.getElementById("nav-bar-mobile").style.display= "block";
+   document.getElementById("icon").style.display= "none";
+   document.getElementById("overlay").style.width= "100%";
+   document.getElementById("X").style.display= "block";
+}
+function closeNav() {
+   document.getElementById("nav-bar-mobile").style.display= "none";
+   document.getElementById("icon").style.display= "block";
+   document.getElementById("overlay").style.width= "0%";
+   document.getElementById("X").style.display= "none";
 }

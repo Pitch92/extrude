@@ -19,9 +19,14 @@ body {
 .nav-bar {
   display: flex; /*important*/
   align-items: center; /*important*/
+  overflow: hidden;
 
   padding: 10px;
   padding-right: 20px;
+}
+
+.nav-bar .icon {
+  display: none;
 }
 
 /* the navigation bar text container */
@@ -64,6 +69,14 @@ body {
 
 .nav-logo:hover {
   cursor: pointer;
+}
+
+.X{
+  display:none;
+}
+
+.nav-bar-mobile {
+  display: none;
 }
 
 /* #endregion of nav bar */
@@ -134,3 +147,77 @@ button:focus {
 
 
 /* #endregion buttons */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+body {
+  padding: 5%;
+}
+
+.nav-bar ul * {
+  display: none;
+}
+
+.nav-bar {
+  padding: 0;
+}
+
+.nav-bar .nav-logo {
+  margin: 0;
+}
+
+.nav-bar .icon {
+  display: block;
+  color: #658071;
+  z-index: 100;
+}
+
+.overlay{
+  position: fixed;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: .8;
+  z-index: 1;
+}
+
+.X{
+  display: none;
+  z-index: 2;
+  position: absolute;
+  justify-content: flex-end;
+  top: 0;
+  right: 25px;
+  color: Grey;
+  font-size: 45px;
+  margin-left: 45px;
+  height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: lighter;
+  font-family: "Segoe UI Light", Avenir Next Ultra Light, sans-serif;
+}
+
+.nav-bar-mobile {
+  position: fixed;
+  z-index: 3;
+  list-style: none;
+  font-size: 30px;
+  height: 60px;
+}
+
+.nav-bar-mobile li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+
+}
+
+}
+
+/* #endregion mobile version */
