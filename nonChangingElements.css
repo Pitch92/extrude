@@ -159,7 +159,7 @@ button:focus {
 @media screen and (max-width: 900px){
 
 #title {
-  display: none;
+  /*display: none;*/
 }
 
 .nav-bar {
@@ -168,6 +168,10 @@ button:focus {
 
 .nav-bar .nav-logo {
   /*margin: 0;*/
+}
+
+.nav-logo {
+  margin-left: 2vw;
 }
 
 .nav-bar .icon {
