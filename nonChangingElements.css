@@ -45,7 +45,6 @@ body {
   margin-left: 1vw;
 }
 
-
 /* the navigation bar text list */
 .nav-text li {
   display: flex;
@@ -189,7 +188,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #658071;
+  background-color: #87998F;
   z-index: 1;
 }
 

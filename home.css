@@ -3,7 +3,15 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
+  background-color: white;
+}
+
+.rectangle {
+  height: 70vh;
+  width: 100vw;
   background-color: #DBE0DD;
+  position: fixed;
+  z-index: -1;
 }
 
 /* #region section1 */
@@ -73,7 +81,13 @@ model-viewer {
 @media screen and (max-width: 900px){
 body {
   background-image: none;
+  background-color: #DBE0DD;
 }
+
+.rectangle {
+  display: none;
+}
+
 
 .section1 .column {
   float: none;
@@ -100,10 +114,15 @@ body {
   justify-content: center;
 }
 
+.section2 model-viewer {
+  height: 50vh;
+}
+
 .section2 {
   padding: 0;
   margin-top: 5vh;
   padding: 5%;
+  background-color: white;
 }
 
 .section1 .left img {

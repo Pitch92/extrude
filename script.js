@@ -35,14 +35,7 @@ function closeNav() {
    document.getElementById("X").style.display= "none";
 }
 
-/* burger
-$(document).ready(function(){
-	$('#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-
-function burger() {
-  document.body.classList.toggle("open");
-}
-*/
+// burger
+function onClick(e) {
+    e.target.classList.toggle("open")
+  }
