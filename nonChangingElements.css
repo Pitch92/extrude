@@ -13,6 +13,10 @@ body {
   clear: both;
 }
 
+.row {
+  padding: 5%;
+}
+
 /* #region nav bar */
 
 /* the whole navigation bar */
@@ -188,7 +192,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #87998F;
+  background-color: #658071;
   z-index: 1;
 }
 
