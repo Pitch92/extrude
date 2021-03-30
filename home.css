@@ -10,8 +10,16 @@ body {
   height: 70vh;
   width: 100vw;
   background-color: #DBE0DD;
-  position: fixed;
+  position: absolute;
   z-index: -1;
+}
+
+.hexagons {
+  position: absolute;
+  width: 90%;
+  max-width: 90vh;
+  z-index: -1;
+  display: none;
 }
 
 /* #region section1 */
