@@ -16,10 +16,11 @@ body {
 
 .hexagons {
   position: absolute;
-  width: 90%;
-  max-width: 90vh;
+  width: 80%;
+  max-width: 80vh;
   z-index: -1;
-  display: none;
+  opacity: 0.3;
+  /*display: none;*/
 }
 
 /* #region section1 */

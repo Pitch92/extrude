@@ -149,6 +149,14 @@ body {
   justify-content: center;
 }
 
+.section2 .left p {
+  text-align: right;
+  margin-right: 5%;
+  margin-left: 25%;
+  font-size: 1.2em;
+}
+
+
 .section2 .right {
   width: 60%;
   height: 100%;
@@ -197,6 +205,13 @@ br {
 
 .section2 .left {
   height: auto;
+}
+
+.section2 .left p {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 1em;
 }
 
 .section2 model-viewer {
