@@ -173,6 +173,18 @@ body {
   height: 100%;
 }
 
+.section1 .right h1 {
+  margin: 0;
+}
+
+br {
+  display: none;
+}
+
+.buttonFull {
+  margin-bottom: 2vh;
+}
+
 .section1 .left, .section1 .right, .section2 .left, .section2 .right {
   width: 100%;
   justify-content: center;
@@ -180,6 +192,7 @@ body {
 
 .section1 {
   padding: 5%;
+  padding-top: 0;
 }
 
 .section2 .left {
@@ -187,15 +200,15 @@ body {
 }
 
 .section2 model-viewer {
-  height: 60vh;
+  height: 40vh;
 }
 
 .section2 .left img {
   width: 100%;
 }
 
-.section2 .row {
-  height: 100%;
+.section2 {
+  height: 62vh;
 }
 
 

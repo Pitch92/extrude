@@ -34,3 +34,8 @@ function closeNav() {
    document.getElementById("overlay").style.width= "0%";
    document.getElementById("X").style.display= "none";
 }
+
+// burger
+function onClick(e) {
+    e.target.classList.toggle("open")
+  }

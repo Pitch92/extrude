@@ -45,7 +45,6 @@ body {
   margin-left: 1vw;
 }
 
-
 /* the navigation bar text list */
 .nav-text li {
   display: flex;
@@ -159,7 +158,7 @@ button:focus {
 @media screen and (max-width: 900px){
 
 #title {
-  display: none;
+  /*display: none;*/
 }
 
 .nav-bar {
@@ -168,6 +167,10 @@ button:focus {
 
 .nav-bar .nav-logo {
   /*margin: 0;*/
+}
+
+.nav-logo {
+  margin-left: 2vw;
 }
 
 .nav-bar .icon {
@@ -185,7 +188,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #658071;
+  background-color: #87998F;
   z-index: 1;
 }
 

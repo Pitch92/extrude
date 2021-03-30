@@ -59,6 +59,14 @@ body {
   background-image: none;
 }
 
+br {
+  display: none;
+}
+
+.section1 {
+  padding: 5%;
+}
+
 .section2 .column {
   float: none;
   padding: 0;
@@ -78,8 +86,14 @@ body {
   height: 100%;
   max-width: 100%;
   max-height: 100%;
+  padding: 0;
+  margin: 2vh 0 2vh 0;
 }
 
+.buttonFull {
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+}
 
 }
 /* #endregion mobile version */
