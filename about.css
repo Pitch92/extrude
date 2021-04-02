@@ -1,10 +1,6 @@
 body
 {
-  /*background-image: url(images/background-19.png);*/
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-color: #ffffff;
+  font-family: Verdana, sans-serif;
   margin: 0;
 }
 .section1 h1 {
@@ -14,13 +10,16 @@ body
 
 
 
-img
+
+
+/* #region section1 */
+
+.section1 img
 {
   height: auto;
   width: 100%;
 }
 
-/* #region section1 */
 .section1 {
   background-color: white;
   padding-top: 5vh;
