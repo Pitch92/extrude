@@ -1,7 +1,20 @@
-body {
+body
+{
   /*background-image: url(images/background-19.png);*/
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  background-color: #DBE0DD;
+  background-color: #ffffff;
+}
+
+img
+{
+  height: auto;
+  width: 100%;
+}
+
+.column .left, .column .right {
+  width: 100%;
+  justify-content: center;
+  height: auto;
 }
