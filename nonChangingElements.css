@@ -47,6 +47,8 @@ body {
   white-space: nowrap;
   font-weight: 500;
   margin-left: 1vw;
+  text-decoration: none;
+  color: black;
 }
 
 /* the navigation bar text list */
