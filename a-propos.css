@@ -5,3 +5,8 @@ body {
   width: 100%;
   background-color: #DBE0DD;
 }
+
+.column img
+{
+  width: 80%;
+}
