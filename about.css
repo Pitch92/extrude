@@ -20,6 +20,7 @@ body
   width: 100%;
 }
 
+
 .section1 {
   background-color: white;
   padding-top: 5vh;
@@ -29,7 +30,6 @@ body
   float: left;
   border: none;
   flex-direction: column;
-
 }
 
 .section1 .left {
@@ -61,9 +61,6 @@ body {
   margin: 0;
 }
 
-br {
-  display: none;
-}
 
 .buttonFull {
   margin-bottom: 2vh;
