@@ -1,5 +1,5 @@
 body {
-  /*background-image: url(images/background-19.png);*/
+  background-image: url(images/echec/splash-image.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -12,6 +12,7 @@ body {
   background-color: #DBE0DD;
   position: absolute;
   z-index: -1;
+  display: none;
 }
 
 .hexagons {
@@ -20,14 +21,13 @@ body {
   max-width: 80vh;
   z-index: -1;
   opacity: 0.3;
-  /*display: none;*/
+  display: none;
 }
 
 /* #region section1 */
 
-.section1 .column {
-  float: left;
-  border: none;
+.section1 {
+  height: 100vh;
 }
 
 .section1 .left {
