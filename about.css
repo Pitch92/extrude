@@ -1,7 +1,104 @@
-body {
-  /*background-image: url(images/background-19.png);*/
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-color: #DBE0DD;
+body
+{
+  font-family: Verdana, sans-serif;
+  margin: 0;
 }
+.section1 h1 {
+  color: #658071;
+  font-weight: 500;
+}
+
+
+
+
+
+/* #region section1 */
+
+.section1 img
+{
+  height: auto;
+  width: 100%;
+}
+
+
+.section1 {
+  background-color: white;
+  padding-top: 5vh;
+}
+
+.section1 .column {
+  float: left;
+  border: none;
+  flex-direction: column;
+}
+
+.section1 .left {
+  width: 40%;
+  height: 100%;
+}
+
+.section1 .right {
+  width: 60%;
+  height: 100%;
+  padding-left: 5vw;
+  padding-top: 10vh;
+}
+/* #endregion section1 */
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+body {
+  background-image: none;
+}
+
+.section1 .column, .section2 .column {
+  float: none;
+  padding: 0;
+  height: 100%;
+}
+
+.section1 .right h1 {
+  margin: 0;
+}
+
+
+.buttonFull {
+  margin-bottom: 2vh;
+}
+
+.section1 .left, .section1 .right, .section2 .left, .section2 .right {
+  width: 100%;
+  justify-content: center;
+}
+
+.section1 {
+  padding: 5%;
+  padding-top: 0;
+}
+
+.section2 .left {
+  height: auto;
+}
+
+.section2 .left p {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 1em;
+}
+
+.section2 model-viewer {
+  height: 40vh;
+}
+
+.section2 .left img {
+  width: 100%;
+}
+
+.section2 {
+  height: 62vh;
+}
+
+
+}
+/* #endregion mobile version */
